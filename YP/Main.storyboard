@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14F1509" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="JGViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uqo-TC-f6N">
+                                <rect key="frame" x="7" y="471" width="161" height="32"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Upload Photo">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="chooseExisting" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6e2-rq-ZC2"/>
+                                    <action selector="chooseExisting" destination="x5A-6p-PRh" eventType="touchUpInside" id="y1g-OY-Yci"/>
+                                    <action selector="uploadPhoto:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kgu-SN-jo5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ctU-Dm-sP4">
+                                <rect key="frame" x="176" y="472" width="139" height="32"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Add Yeezy">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="addYeezy:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="LCx-KJ-csU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nw5-kM-Hdz">
+                                <rect key="frame" x="7" y="518" width="161" height="28"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Take Photo">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="takePhoto" destination="x5A-6p-PRh" eventType="touchUpInside" id="17I-G7-ztc"/>
+                                    <action selector="takePhoto" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JwE-9n-Kvt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UVP-vA-y7A">
+                                <rect key="frame" x="176" y="516" width="139" height="30"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Save Photo">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="saveImage" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Kty-bT-HTe"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="backgroundPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="zdj-fk-TtK">
+                                <rect key="frame" x="0.0" y="44" width="320" height="424"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="kanyePhoto" translatesAutoresizingMaskIntoConstraints="NO" id="GHH-gU-CbS">
+                                <rect key="frame" x="57" y="122" width="207" height="176"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="eGQ-dg-IMT" appends="YES" id="wIk-ma-60y"/>
+                                    <outletCollection property="gestureRecognizers" destination="eGQ-dg-IMT" appends="YES" id="CDG-Oh-n8n"/>
+                                    <outletCollection property="gestureRecognizers" destination="ff8-ke-6X2" appends="YES" id="vqK-z7-NXx"/>
+                                    <outletCollection property="gestureRecognizers" destination="ff8-ke-6X2" appends="YES" id="IYJ-Vv-o9R"/>
+                                    <outletCollection property="gestureRecognizers" destination="LTn-We-5i4" appends="YES" id="dtB-0l-kVh"/>
+                                    <outletCollection property="gestureRecognizers" destination="LTn-We-5i4" appends="YES" id="qGF-DC-Ugc"/>
+                                    <outletCollection property="gestureRecognizers" destination="Dpo-Tu-4xj" appends="YES" id="djx-vs-mwY"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YeezyPleazy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAs-Tn-fiG">
+                                <rect key="frame" x="-1" y="11" width="320" height="34"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" staticText="YES" notEnabled="YES"/>
+                                </accessibility>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="KohinoorDevanagari-Book" family="Kohinoor Devanagari" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="c7H-hw-CME" appends="YES" id="OJu-fu-Blw"/>
+                                </connections>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217293262482" green="0.098039217293262482" blue="0.098039217293262482" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="zdj-fk-TtK" id="YfY-2s-bHR"/>
+                        <outlet property="kanyePhoto" destination="GHH-gU-CbS" id="3hE-YL-jxm"/>
+                        <outlet property="label" destination="jAs-Tn-fiG" id="Fcx-nm-FFe"/>
+                        <outlet property="saveImage" destination="zdj-fk-TtK" id="uO1-Wd-m0d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <pinchGestureRecognizer id="eGQ-dg-IMT"/>
+                <rotationGestureRecognizer id="ff8-ke-6X2"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="LTn-We-5i4"/>
+                <rotationGestureRecognizer id="Dpo-Tu-4xj"/>
+                <rotationGestureRecognizer id="c7H-hw-CME"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="-35"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
